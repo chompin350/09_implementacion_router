@@ -25,14 +25,14 @@ export default new Router({
             component: Contacto
         },
         {
-            path: '/post/:registro',
+            path: '/post',
             component: Post,
             children: [
                 {
-                    path: 'articulo',
+                    path: ':articulo',
                     component: Articulo,
-                    name: 'articulo'
-                },
+                    name: 'Articulo'
+                }
             ]
         },
         {
